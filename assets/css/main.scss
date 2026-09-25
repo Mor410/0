@@ -14,27 +14,27 @@ search: false
 
 
 /* =========================================
-   Mor Blog 自定义淡蓝卡片布局
+   Mor Blog 自定义卡片布局
    Minimal Mistakes
    ========================================= */
 
 
-/* =========================
-   页面根背景
-   保持白色
-   ========================= */
+/* =========================================
+   全局背景
+   ========================================= */
 
 body {
 
-  background: #ffffff;
+  background:#ffffff;
 
 }
 
 
 
-/* =========================
-   顶部导航卡片
-   ========================= */
+/* =========================================
+   顶部导航栏卡片
+   ========================================= */
+
 
 .masthead {
 
@@ -63,7 +63,11 @@ body {
 
 
 
-/* 导航内部透明 */
+/*
+ Minimal Mistakes 导航内部
+ 去除默认白色
+*/
+
 
 .masthead__inner-wrap {
 
@@ -88,41 +92,11 @@ body {
 
 
 
-/*
- 修复 Minimal Mistakes
- 导航内部默认白色
-*/
-
-.masthead__inner-wrap {
-
-  background:
-  transparent;
-
-  border-radius:
-  0 0 18px 18px;
-
-}
-
-
-
-.greedy-nav {
-
-  background:
-  transparent;
-
-}
-
-
-
-/* =========================
-   主体区域
+/* =========================================
+   首页主体卡片
    作者栏 + 页面内容
-   ========================= */
+   ========================================= */
 
-
-/*
- 整体淡蓝色背景
-*/
 
 .initial-content {
 
@@ -132,24 +106,16 @@ body {
 
 
 
-  /*
-   圆角
-  */
-
   border-radius:20px;
 
 
-
-  /*
-   内部间距
-  */
 
   padding:2rem;
 
 
 
   /*
-   与浏览器边缘保持白色距离
+   左右白色边界
   */
 
   margin-left:2rem;
@@ -159,7 +125,15 @@ body {
 
 
   /*
-   轻微浮起效果
+   增大主页高度
+  */
+
+  min-height:850px;
+
+
+
+  /*
+   卡片阴影
   */
 
   box-shadow:
@@ -171,72 +145,59 @@ body {
 
 
 
-/* =========================
-   作者栏
-   保持透明
-   ========================= */
+/* =========================================
+   作者栏透明
+   ========================================= */
 
 
 .sidebar {
 
 
-  background:
-  transparent;
+  background:transparent;
 
 
 }
 
 
 
-/* =========================
-   页面内容
-   保持透明
-   ========================= */
+/* =========================================
+   页面正文透明
+   ========================================= */
 
 
 .page {
 
 
-  background:
-  transparent;
+  background:transparent;
 
 
 }
+
 
 
 .page__inner-wrap {
 
 
-  background:
-  transparent;
+  background:transparent;
 
 
 }
+
 
 
 .page__content {
 
 
-  background:
-  transparent;
+  background:transparent;
 
 
 }
 
 
 
-/* =========================
+/* =========================================
    图片圆角
-   ========================= */
-
-
-.page img {
-
-
-  border-radius:12px;
-
-
-}
+   ========================================= */
 
 
 .author__avatar img {
@@ -249,39 +210,87 @@ body {
 
 
 
-/* =========================
-   页脚保持原样
-   ========================= */
+.page img {
 
 
-.page__footer {
-
-
-  background:
-  transparent;
+  border-radius:12px;
 
 
 }
 
 
 
-/* =========================
+/* =========================================
+   页脚压缩
+   ========================================= */
+
+
+.page__footer {
+
+
+  padding-top:0.5rem;
+
+
+  padding-bottom:0.5rem;
+
+
+}
+
+
+
+.page__footer footer {
+
+
+  margin-top:0;
+
+
+  margin-bottom:0;
+
+
+}
+
+
+
+.page__footer-copyright {
+
+
+  margin:0;
+
+
+}
+
+
+
+/*
+ 如果存在关注/Feed区域隐藏
+*/
+
+.page__footer-follow {
+
+
+  display:none;
+
+
+}
+
+
+
+/* =========================================
    移动端适配
-   ========================= */
+   ========================================= */
 
 
 @media(max-width:768px){
 
 
-  .initial-content {
+
+  .masthead {
 
 
     margin-left:1rem;
 
+
     margin-right:1rem;
-
-
-    padding:1rem;
 
 
     border-radius:14px;
@@ -291,12 +300,23 @@ body {
 
 
 
-  .masthead {
+
+  .initial-content {
 
 
-    border-radius:
+    margin-left:1rem;
 
-    0 0 12px 12px;
+
+    margin-right:1rem;
+
+
+    padding:1rem;
+
+
+    min-height:600px;
+
+
+    border-radius:14px;
 
 
   }
