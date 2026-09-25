@@ -1,13 +1,13 @@
 # main links
 main:
-  - title: "Home"
+  - title: "主页"
     url: /
-
-  - title: "About"
-    url: /about/
-
-  - title: "Projects"
-    url: /projects/
 
   - title: "Blog"
     url: /posts/
+
+  - title: "项目"
+    url: /projects/
+
+    - title: "关于"
+    url: /about/

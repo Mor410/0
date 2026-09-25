@@ -5,7 +5,6 @@ permalink: /about/
 author_profile: true
 ---
 
-# About Me
 
 Hi, I'm Mor.
 
