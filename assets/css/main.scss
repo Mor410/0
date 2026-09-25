@@ -33,16 +33,56 @@ body {
 
 
 /* =========================
-   顶部导航栏
+   顶部导航卡片
    ========================= */
 
 .masthead {
 
-  background:
-  rgba(173,216,255,0.16);
 
-  border-radius:
-  0 0 18px 18px;
+  background:
+  rgba(173,216,255,0.10);
+
+
+  border-radius:20px;
+
+
+  margin-left:2rem;
+
+  margin-right:2rem;
+
+
+  margin-top:1rem;
+
+
+  box-shadow:
+
+  0 4px 20px rgba(0,0,0,0.05);
+
+
+}
+
+
+
+/* 导航内部透明 */
+
+.masthead__inner-wrap {
+
+
+  background:transparent;
+
+
+  border-radius:20px;
+
+
+}
+
+
+
+.greedy-nav {
+
+
+  background:transparent;
+
 
 }
 
@@ -217,8 +257,23 @@ body {
 .page__footer {
 
 
-  background:
-  transparent;
+  padding-top:1rem;
+
+
+  padding-bottom:1rem;
+
+
+}
+
+
+
+.page__footer footer {
+
+
+  margin-top:0;
+
+
+  margin-bottom:0;
 
 
 }
