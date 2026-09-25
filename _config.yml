@@ -15,7 +15,7 @@
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise", "catppuccin_latte", "catppuccin_mocha"
 
 # Site Settings
-locale                   : "en-US"
+locale                   : "zh-CN"
 direction                : # "ltr" (default), "rtl" # set the direction of the page
 title                    : "Mor's Blog"
 title_separator          : "-"
