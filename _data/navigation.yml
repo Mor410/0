@@ -3,7 +3,7 @@ main:
   - title: "主页"
     url: /
 
-  - title: "Blog"
+  - title: "文章"
     url: /posts/
 
   - title: "项目"
