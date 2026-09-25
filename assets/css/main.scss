@@ -13,89 +13,73 @@ search: false
 }
 
 
-/* =====================================
-   Minimal Mistakes 自定义布局
-   ===================================== */
+/* ==============================
+   页面整体淡蓝卡片
+   ============================== */
 
 
-/* =====================
-   页面背景
-   ===================== */
+/* 页面背景 */
 
 body {
 
-  background:#ffffff;
+  background:#fff;
 
 }
 
 
 
-/* =====================
+/* ==============================
    导航栏
-   ===================== */
+   ============================== */
 
-
-/*
-整个导航变蓝
-*/
 
 .masthead {
 
+
   background:
-  rgba(173,216,255,0.18);
+  rgba(173,216,255,.18);
+
 
   border-radius:
   0 0 18px 18px;
 
+
 }
 
 
-
-/*
-覆盖主题默认白色
-*/
 
 .masthead__inner-wrap {
 
 
   background:
-  rgba(173,216,255,0.18);
-
-
-  border-radius:
-  0 0 18px 18px;
+  transparent;
 
 
 }
 
 
-
-/* 去掉导航内部白色 */
 
 .greedy-nav {
 
 
-  background:transparent;
+  background:
+  transparent;
 
 
 }
 
 
 
-/* =====================
-   作者栏+主页整体
-   ===================== */
+/* ==============================
+   作者栏 + 正文整体
+   ============================== */
 
-
-/*
-整个主体大卡片
-*/
 
 .initial-content {
 
 
   background:
-  rgba(173,216,255,0.12);
+  rgba(173,216,255,.10);
 
 
   border-radius:20px;
@@ -108,88 +92,71 @@ body {
 
 
 
-/*
-作者栏透明
-*/
+/* 去除 Minimal Mistakes 默认白色层 */
 
-.sidebar {
-
-
-  background:transparent;
-
-
-}
-
-
-
-/*
-正文透明
-*/
 
 .page {
 
 
-  background:transparent;
+  background:
+  transparent;
 
 
 }
 
 
 
-/*
-删除正文白色块
-*/
+.page__inner-wrap {
+
+
+  background:
+  transparent;
+
+
+}
+
+
 
 .page__content {
 
 
-  background:transparent;
-
-
-  padding:0;
+  background:
+  transparent;
 
 
 }
 
 
 
-/* =====================
-   内容圆角
-   ===================== */
 
-.page {
+.sidebar {
 
 
-  border-radius:16px;
+  background:
+  transparent;
+
 
 }
+
 
 
 
 /* 图片圆角 */
 
+.author__avatar img {
+
+
+  border-radius:50%;
+
+
+}
+
+
+
 .page img {
 
- border-radius:12px;
 
-}
-
-
-
-/* =====================
-   手机适配
-   ===================== */
-
-@media(max-width:768px){
-
-
-.initial-content{
-
-padding:1rem;
-
-border-radius:14px;
-
-}
+  border-radius:12px;
 
 
 }
