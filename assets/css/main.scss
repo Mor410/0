@@ -13,74 +13,89 @@ search: false
 }
 
 
-/* ==================================
-   自定义淡蓝色卡片布局
-   ================================== */
+/* =====================================
+   Minimal Mistakes 自定义布局
+   ===================================== */
 
 
-/* ----------------
-   根页面保持白色
-   ---------------- */
+/* =====================
+   页面背景
+   ===================== */
 
 body {
 
-  background: #ffffff;
+  background:#ffffff;
 
 }
 
 
 
-/* ----------------
-   顶部导航栏
-   ---------------- */
+/* =====================
+   导航栏
+   ===================== */
 
+
+/*
+整个导航变蓝
+*/
 
 .masthead {
 
-
   background:
-  rgba(173, 216, 255, 0.16);
-
+  rgba(173,216,255,0.18);
 
   border-radius:
   0 0 18px 18px;
-
-
-  margin-bottom: 2rem;
 
 }
 
 
 
 /*
- 修复 Minimal Mistakes
- 默认内部白色的问题
+覆盖主题默认白色
 */
 
 .masthead__inner-wrap {
 
 
   background:
-  rgba(173, 216, 255, 0.16);
+  rgba(173,216,255,0.18);
 
 
   border-radius:
   0 0 18px 18px;
 
+
 }
 
 
 
-/* ----------------
-   作者栏 + 页面主体大卡片
-   ---------------- */
+/* 去掉导航内部白色 */
 
+.greedy-nav {
+
+
+  background:transparent;
+
+
+}
+
+
+
+/* =====================
+   作者栏+主页整体
+   ===================== */
+
+
+/*
+整个主体大卡片
+*/
 
 .initial-content {
 
 
   background:
-  rgba(173, 216, 255, 0.10);
+  rgba(173,216,255,0.12);
 
 
   border-radius:20px;
@@ -94,8 +109,7 @@ body {
 
 
 /*
- 作者栏透明
- 不单独成为卡片
+作者栏透明
 */
 
 .sidebar {
@@ -109,7 +123,7 @@ body {
 
 
 /*
- 页面主体透明
+正文透明
 */
 
 .page {
@@ -122,23 +136,31 @@ body {
 
 
 
-/* ----------------
-   正文区域保持白色
-   留出边界
-   ---------------- */
-
+/*
+删除正文白色块
+*/
 
 .page__content {
 
 
-  background:#ffffff;
+  background:transparent;
+
+
+  padding:0;
+
+
+}
+
+
+
+/* =====================
+   内容圆角
+   ===================== */
+
+.page {
 
 
   border-radius:16px;
-
-
-  padding:2rem;
-
 
 }
 
@@ -148,49 +170,26 @@ body {
 
 .page img {
 
-
-  border-radius:12px;
-
+ border-radius:12px;
 
 }
 
 
 
-/* ----------------
-   移动端适配
-   ---------------- */
-
+/* =====================
+   手机适配
+   ===================== */
 
 @media(max-width:768px){
 
 
-  .initial-content {
+.initial-content{
 
-    padding:1rem;
+padding:1rem;
 
-    border-radius:14px;
+border-radius:14px;
 
-  }
-
-
-
-  .page__content {
-
-    padding:1rem;
-
-    border-radius:12px;
-
-  }
-
-
-
-  .masthead {
-
-
-    border-radius:
-    0 0 12px 12px;
-
-  }
+}
 
 
 }
