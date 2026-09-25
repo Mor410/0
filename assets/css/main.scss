@@ -8,15 +8,49 @@ search: false
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
+/* 隐藏页脚关注区域 */
 .page__footer-follow {
   display: none;
 }
 
-body {
-  background-image: linear-gradient(
-    rgba(173, 216, 255, 0.25),
-    rgba(173, 216, 255, 0.25)
-  );
 
-  background-attachment: fixed;
+html {
+  background-color: rgb(173, 216, 255);
+}
+
+
+body {
+  background-color: transparent;
+}
+
+#page {
+  background-color: transparent;
+}
+
+
+.initial-content {
+  background-color: transparent;
+}
+
+#main {
+  background: rgba(255, 255, 255, 0.75);
+
+  border-radius: 16px;
+
+  backdrop-filter: blur(10px);
+
+  -webkit-backdrop-filter: blur(10px);
+}
+
+html[data-theme="dark"] {
+
+  background-color: #000;
+
+}
+
+
+html[data-theme="dark"] #main {
+
+  background: transparent;
+
 }
