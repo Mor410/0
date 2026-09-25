@@ -11,3 +11,20 @@ search: false
 .page__footer-follow {
   display: none;
 }
+
+/* 页面内容淡蓝背景 */
+
+html:not([data-theme="dark"]) {
+
+  .page__content {
+
+    background:
+    rgba(173,216,255,0.10);
+
+    border-radius:12px;
+
+    padding:1.5rem;
+
+  }
+
+}
