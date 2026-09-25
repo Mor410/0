@@ -12,19 +12,111 @@ search: false
   display: none;
 }
 
-/* 页面内容淡蓝背景 */
 
-html:not([data-theme="dark"]) {
+/* =====================================
+   自定义淡蓝色卡片背景
+   Minimal Mistakes
+   ===================================== */
 
-  .page__content {
+/*
+ * 根页面背景
+ * 保持白色，不改变整个网页颜色
+ */
+body {
+  background: #ffffff;
+}
 
-    background:
-    rgba(173,216,255,0.10);
 
+/*
+ * 主内容区域间距
+ */
+#main {
+  padding-top: 2rem;
+}
+
+
+/*
+ * 顶部导航栏
+ */
+
+.masthead {
+  background:
+  rgba(173, 216, 255, 0.12);
+  border-radius:
+  0 0 16px 16px;
+}
+
+
+/*
+ * 限制导航内部宽度
+ * 防止背景无限拉伸
+ */
+
+.masthead__inner-wrap {
+  border-radius:16px;
+}
+
+
+/*
+ * 作者栏
+ * 包括：
+ * 头像
+ * 名称
+ * 简介
+ * 社交链接
+ */
+
+.sidebar {
+  background:
+  rgba(173, 216, 255, 0.12);
+  border-radius:16px;
+  padding:1.2rem;
+}
+
+
+/*
+ * 页面正文区域
+ * 包括：
+ * 首页
+ * 关于
+ * 项目
+ * 文章正文
+ */
+
+.page {
+  background:
+  rgba(173, 216, 255, 0.12);
+  border-radius:16px;
+  padding:2rem;
+}
+
+
+/*
+ * 防止文章图片撑破圆角
+ */
+
+.page img {
+  border-radius:12px;
+}
+
+
+/*
+ * 手机端优化
+ */
+
+@media(max-width:768px){
+  .sidebar {
     border-radius:12px;
-
-    padding:1.5rem;
-
+    padding:1rem;
   }
 
+  .page {
+    border-radius:12px;
+    padding:1rem;
+  }
+
+  .masthead {
+    border-radius:
+    0 0 12px 12px;
+  }
 }
