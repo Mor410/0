@@ -13,100 +13,184 @@ search: false
 }
 
 
-/* =================================
-   淡蓝色卡片式页面布局
-   ================================= */
+/* ==================================
+   自定义淡蓝色卡片布局
+   ================================== */
 
 
-/*
- 根页面保持白色
-*/
+/* ----------------
+   根页面保持白色
+   ---------------- */
+
 body {
-  background:#ffffff;
+
+  background: #ffffff;
+
 }
 
 
-/*
- ==========================
- 顶部导航栏
- ==========================
-*/
+
+/* ----------------
+   顶部导航栏
+   ---------------- */
+
+
 .masthead {
+
+
   background:
-  rgba(173,216,255,0.18);
+  rgba(173, 216, 255, 0.16);
+
+
   border-radius:
-  0 0 16px 16px;
-  margin-bottom:2rem;
+  0 0 18px 18px;
+
+
+  margin-bottom: 2rem;
+
 }
 
 
+
 /*
- 导航内部圆角
+ 修复 Minimal Mistakes
+ 默认内部白色的问题
 */
+
 .masthead__inner-wrap {
-  border-radius:16px;
-}
 
 
-/*
- ==========================
- 作者栏 + 页面内容整体
- ==========================
-*/
-.initial-content {
   background:
-  rgba(173,216,255,0.12);
+  rgba(173, 216, 255, 0.16);
+
+
+  border-radius:
+  0 0 18px 18px;
+
+}
+
+
+
+/* ----------------
+   作者栏 + 页面主体大卡片
+   ---------------- */
+
+
+.initial-content {
+
+
+  background:
+  rgba(173, 216, 255, 0.10);
+
+
   border-radius:20px;
+
+
   padding:2rem;
+
+
 }
 
 
+
 /*
- 去掉作者栏自己的背景
+ 作者栏透明
+ 不单独成为卡片
 */
+
 .sidebar {
-  background:none;
-  padding:0;
+
+
+  background:transparent;
+
+
 }
 
 
+
 /*
- 去掉正文自己的背景
+ 页面主体透明
 */
+
 .page {
-  background:none;
-  padding:0;
+
+
+  background:transparent;
+
+
 }
 
 
-/*
- 内容间距优化
-*/
+
+/* ----------------
+   正文区域保持白色
+   留出边界
+   ---------------- */
+
+
 .page__content {
-  margin-top:0;
+
+
+  background:#ffffff;
+
+
+  border-radius:16px;
+
+
+  padding:2rem;
+
+
 }
 
 
-/*
- 图片圆角
-*/
+
+/* 图片圆角 */
+
 .page img {
+
+
   border-radius:12px;
+
+
 }
 
 
-/*
- ==========================
- 移动端
- ==========================
-*/
+
+/* ----------------
+   移动端适配
+   ---------------- */
+
+
 @media(max-width:768px){
-.initial-content{
-padding:1rem;
-border-radius:14px;
-}
-.masthead{
-border-radius:
-0 0 12px 12px;
-}
+
+
+  .initial-content {
+
+    padding:1rem;
+
+    border-radius:14px;
+
+  }
+
+
+
+  .page__content {
+
+    padding:1rem;
+
+    border-radius:12px;
+
+  }
+
+
+
+  .masthead {
+
+
+    border-radius:
+    0 0 12px 12px;
+
+  }
+
+
 }
