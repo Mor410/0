@@ -13,110 +13,100 @@ search: false
 }
 
 
-/* =====================================
-   自定义淡蓝色卡片背景
-   Minimal Mistakes
-   ===================================== */
+/* =================================
+   淡蓝色卡片式页面布局
+   ================================= */
+
 
 /*
- * 根页面背景
- * 保持白色，不改变整个网页颜色
- */
+ 根页面保持白色
+*/
 body {
-  background: #ffffff;
+  background:#ffffff;
 }
 
 
 /*
- * 主内容区域间距
- */
-#main {
-  padding-top: 2rem;
-}
-
-
-/*
- * 顶部导航栏
- */
-
+ ==========================
+ 顶部导航栏
+ ==========================
+*/
 .masthead {
   background:
-  rgba(173, 216, 255, 0.12);
+  rgba(173,216,255,0.18);
   border-radius:
   0 0 16px 16px;
+  margin-bottom:2rem;
 }
 
 
 /*
- * 限制导航内部宽度
- * 防止背景无限拉伸
- */
-
+ 导航内部圆角
+*/
 .masthead__inner-wrap {
   border-radius:16px;
 }
 
 
 /*
- * 作者栏
- * 包括：
- * 头像
- * 名称
- * 简介
- * 社交链接
- */
-
-.sidebar {
+ ==========================
+ 作者栏 + 页面内容整体
+ ==========================
+*/
+.initial-content {
   background:
-  rgba(173, 216, 255, 0.12);
-  border-radius:16px;
-  padding:1.2rem;
-}
-
-
-/*
- * 页面正文区域
- * 包括：
- * 首页
- * 关于
- * 项目
- * 文章正文
- */
-
-.page {
-  background:
-  rgba(173, 216, 255, 0.12);
-  border-radius:16px;
+  rgba(173,216,255,0.12);
+  border-radius:20px;
   padding:2rem;
 }
 
 
 /*
- * 防止文章图片撑破圆角
- */
+ 去掉作者栏自己的背景
+*/
+.sidebar {
+  background:none;
+  padding:0;
+}
 
+
+/*
+ 去掉正文自己的背景
+*/
+.page {
+  background:none;
+  padding:0;
+}
+
+
+/*
+ 内容间距优化
+*/
+.page__content {
+  margin-top:0;
+}
+
+
+/*
+ 图片圆角
+*/
 .page img {
   border-radius:12px;
 }
 
 
 /*
- * 手机端优化
- */
-
+ ==========================
+ 移动端
+ ==========================
+*/
 @media(max-width:768px){
-  .sidebar {
-    border-radius:12px;
-    padding:1rem;
-  }
-
-  .page {
-    border-radius:12px;
-    padding:1rem;
-  }
-
-  .masthead {
-    border-radius:
-    0 0 12px 12px;
-  }
+.initial-content{
+padding:1rem;
+border-radius:14px;
+}
+.masthead{
+border-radius:
+0 0 12px 12px;
+}
 }
