@@ -11,3 +11,20 @@ search: false
 .page__footer-follow {
   display: none;
 }
+
+html {
+
+  background-image:
+    linear-gradient(
+      rgba(255,255,255,0.65),
+      rgba(255,255,255,0.65)
+    ),
+    url("/assets/images/background.webp");
+
+  background-size: cover;
+
+  background-position: center;
+
+  background-attachment: fixed;
+
+}
