@@ -139,6 +139,9 @@ author:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
+    - label: Steam
+      icon: "fab fa-fw fa-steam"
+      url: "https://steamcommunity.com/id/Morph_410/"
 
 # Site Footer
 footer:
