@@ -1,9 +1,9 @@
 ---
 layout: single
+title: "Hello"
 author_profile: true
 ---
 
-# Hello
 # ·-·
 
 ## 这里是Mor的个人主页
